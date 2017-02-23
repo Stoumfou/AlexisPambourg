@@ -1,12 +1,34 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
+    <title>@ViewBag.Title - @Constant.Author</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mon application ASP.NET</title>
+    <meta name="keywords" content="@Constant.Author - Développeur web">
+    <meta name="description" content="Site d'@Constant.Author - Développeur web">
+    <meta name="subject" content="@Constant.Author - Développeur web">
+    <meta name="copyright" content="@Constant.Author">
+    <meta name="language" content="@Constant.LangFr">
+    <meta name="robots" content="all">
+    <meta name="abstract" content="Site d'@Constant.Author - Développeur web">
+    <meta name="page-topic" content="Site d'@Constant.Author">
+    <meta name="summary" content="Site d'@Constant.Author - Développeur web">
+    <meta name="Classification" content="Employment, work">
+    <meta name="author" content="@Constant.Author">
+    <meta name="designer" content="@Constant.Author">
+    <meta name="owner" content="@Constant.Author">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="target" content="all">
+    <meta name="HandheldFriendly" content="True">
+    <meta property="og:title" content="@Constant.Author - Développeur">
+    <meta property="og:type" content="website">
+    @*<meta property="og:url" content="https://www.pambourg.me/">
+    <meta property="og:image" content="https://www.pambourg.me/screenshot.png">
+    <meta name="reply-to" content="alexis.pambourg@pambourg.com">*@
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -32,12 +54,10 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - @Constant.Author</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Content/js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

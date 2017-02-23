@@ -141,7 +141,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Constant.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VoyageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -164,91 +167,6 @@
     <Content Include="Content\plugins\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\plugins\font-awesome-4.7.0\HELP-US-OUT.txt" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\ajaxSubmit-integration-demo.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\bootstrap\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\captcha.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\images\button.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\images\image.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\image_req.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\index.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\newsession.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\process.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\rand.php" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\style.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\cinema\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\cinema\plan_9.jpg" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\cinema\refer_madness.jpg" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\cinema\saucer_men.jpg" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\css\cmxform.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\css\cmxformTemplate.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\css\core.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\css\reset.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\css\screen.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\custom-messages-data-demo.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\custom-methods-demo.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\dynamic-totals.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\errorcontainer-demo.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\errors-within-labels.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\file_input.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\bg.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\checked.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\cmxform-divider.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\cmxform-fieldset.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\loading.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\images\unchecked.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\jquerymobile.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\images\bg.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\images\header1.jpg" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\images\page.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\images\required_star.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\login\screen.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\backRequiredGray.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\back_green-fade.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\back_nav_blue.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\blank.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\button-submit.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\favicon.ico" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\help.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\left-nav-callout-long.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\login-sprite.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\logo_marketo.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\sf.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\step1-24.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\step2-24.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\step3-24.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\tab-sprite.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\tab_green.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\time.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\toggle.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\images\warning.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\jquery.maskedinput.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\mktSignup.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\step2.htm" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\marketo\stylesheet.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\bg.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\left_white.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\milk.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\milk.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\milk\right_white.png" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\multipart\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\multipart\style.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\radio-checkbox-select-demo.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\requirejs\app.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\requirejs\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\semantic-ui\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\site-demos.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\themerollered.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce4\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\index.html" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\themes\simple\editor_template.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\themes\simple\img\icons.gif" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\themes\simple\langs\en.js" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\themes\simple\skins\default\ui.css" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\tinymce\tiny_mce.js" />
     <Content Include="Content\plugins\jquery-validation-1.16.0\dist\additional-methods.js" />
     <Content Include="Content\plugins\jquery-validation-1.16.0\dist\additional-methods.min.js" />
     <Content Include="Content\plugins\jquery-validation-1.16.0\dist\jquery.validate.js" />
@@ -553,11 +471,9 @@
     <Content Include="Content\plugins\font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="Content\plugins\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="Content\plugins\font-awesome-4.7.0\scss\_variables.scss" />
-    <None Include="Content\js\jquery-1.10.2.intellisense.js" />
-    <None Include="Content\js\jquery.validate-vsdoc.js" />
-    <Content Include="Content\js\jquery.validate.unobtrusive.js" />
-    <Content Include="Content\js\jquery.validate.unobtrusive.min.js" />
     <Content Include="Content\plugins\modernizr-2.6.2\modernizr-2.6.2.js" />
+    <Content Include="robot.txt" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -572,20 +488,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Content\plugins\jquery-validation-1.16.0\demo\captcha\fonts\Anorexia.ttf" />
     <Content Include="Content\plugins\jquery-validation-1.16.0\package.json" />
     <Content Include="Content\plugins\jquery-validation-1.16.0\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\img\" />
+    <Folder Include="Content\js\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Voyage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\js\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
